@@ -1,0 +1,49 @@
+/* App.css */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.disabled-date {
+  pointer-events: none;
+  background-color: #f0f0f0; /* Color de fondo para las fechas deshabilitadas */
+  color: #999; /* Color del texto para las fechas deshabilitadas */
+}
+
+.estructura {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+  margin-top: 70px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .container {
+    margin-top: 10px;
+  }
+}
+
+#carrusel,
+#us,
+#contact,
+#curses {
+  scroll-margin-top: 150px;
+}
+
+.fc-view-harness-active{
+  height: 300px !important;
+}
